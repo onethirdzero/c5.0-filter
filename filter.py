@@ -3,7 +3,7 @@
 # which will be fed to C5.0/See5
 
 def simplify(string_list, file):
-	attr1 = string_list[0][0]
+	attr1 = string_list[0][:-1] # Excludes the last character
 
 	attr2 = int(string_list[1])
 	if attr2 == 0:
@@ -13,7 +13,7 @@ def simplify(string_list, file):
 	else:
 		attr2 = "positive"
 
-	attr3 = string_list[2][0]
+	attr3 = string_list[2][:-1]
 	
 	attr4 = int(string_list[3])
 	if attr4 == 0:
